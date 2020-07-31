@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import faker from "faker";
 
-function App() {
+//importing files
+import "./App.css";
+import Header from "./Header";
+import Card from "./Card";
+import Footer from "./Footer";
+
+
+//functional component
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <Header />
+      </div>
+      <section style={{ backgroundColor: "#92a8d1" }}>
+        <div className="cards">
+          <Card image={faker.random.image()} title={faker.lorem.words()} />
+          <Card image={faker.random.image()} title={faker.lorem.words()} />
+          <Card image={faker.random.image()} title={faker.lorem.words()} />
+          <Card image={faker.random.image()} title={faker.lorem.words()} />
+          <Card image={faker.random.image()} title={faker.lorem.words()} />
+          <Card image={faker.random.image()} title={faker.lorem.words()} />
+
+        </div>
+      </section>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

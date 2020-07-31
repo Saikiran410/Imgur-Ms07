@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
+* {
+  color: whitesmoke;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* HEADER */
+.Header-Background {
+  background-image: url("./image.png");
+  min-height: 350px;
+  min-width: 700px;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.brand {
+  width: 100%;
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.brand h1 {
+  font-family: "Righteous", cursive;
+  margin-left: 5px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+.Head-Button Button {
+  background-color: #17a362;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.Searchbar-form {
+  position: absolute;
+  top: 2%;
+  left: 40%;
+  width: auto;
+}
+
+.searchbar-input {
+  background: rgba(163, 150, 150, 0.973);
+  color: #fcf7f7;
+  border: transparent;
+  border-radius: 3px;
+  font-size: 17px;
+  opacity: 0.8;
+}
+
+.submit-input {
+  background: rgba(255, 255, 255, 0.25);
+  width: 40px;
+  height: 35px;
+  border: none;
+  border-radius: 2px;
+  margin-left: 2px;
+}
+
+.Searchbar-button{
+  position: absolute;
+  top: 2%;
+  left: 105%;
+  width: 40px;
+  height: 35px;
+  background-color: #17a362;
+  border: none;
+  padding: 0px 10px;
+  border-radius: 5px;
+  cursor: pointer;  
+
+}
+/* award */
+.awardLogo {
+  font-size: 2rem;
+  margin-top: 5px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+/* new post */
+.alignLeft {
+  float: left;
+  margin-top: 6px;
+  margin-left: 3px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+/* sign in and sign up */
+.alignRight {
+  float: right;
+  margin-top: 6px;
+  display: flex;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* headercard title */
+ .headCardTitle {
+  margin-top: 10px;
+  text-align: center;
+  font-family: sans-serif;
+} 
+
+/* Cards */
+.cards {
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #2e3035;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100%;
+}
+
+/* card image */
+.card-image {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(138, 125, 125, 0.473);
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-image img {
+  width: 100%;
+}
+
+.card-button {
+  background-color: #2e3035;
+  border: none;
+  font-size: large;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+/* Cards Stats */
+ .card-stats {
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #2e3035;
+  padding: 5px;
+}
+
+/* footer style */
+.navigation li {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.navigation a {
+  color: rgb(102, 73, 180);
+  padding: 50px 100px;
 }
